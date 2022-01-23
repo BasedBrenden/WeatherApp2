@@ -1,0 +1,81 @@
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    background: linear-gradient(to bottom right, skyblue, rgb(243, 197, 255));
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: gray;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "left center right"
+        "left slider right";
+}
+
+
+.main{
+    grid-area: center;
+    text-align: center;
+}
+
+.material-icons.md-48{
+    margin-top: 2rem;
+    font-size: 60px;
+    padding-bottom: none;
+}
+
+h2{
+    margin-top: 0px;
+}
+
+.skies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 4px;
+    align-items: center;
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    display: grid;
+    grid-template-areas: 
+        "icon"
+        "icon"
+        "weather";
+}
+
+.icon{
+    grid-area: icon;
+}
+
+.weatherData{
+    grid-area: weather;
+}
+
+.weekContainer{
+    grid-area: slider;
+    justify-content: center;
+}
+.weekDisplay{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    width: auto;
+    height: 250px;
+}
+
